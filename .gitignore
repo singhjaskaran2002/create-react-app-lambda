@@ -4,12 +4,19 @@
 /node_modules
 /.pnp
 .pnp.js
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
 
 # testing
 /coverage
 
 # production
 /build
+/built-lambda
+
+/.netlify
 
 # misc
 .DS_Store
