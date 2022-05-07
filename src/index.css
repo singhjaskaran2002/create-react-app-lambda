@@ -1,0 +1,329 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "react-calendar/dist/Calendar.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main-app {
+  position: relative;
+}
+
+.navbar {
+  background: #f2f9ff !important;
+  padding: 0 !important;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.container-fluid {
+  padding: 0;
+  background: #fff;
+}
+
+.navbar-brand {
+  width: 300px !important;
+  margin: 0;
+  text-align: center;
+  color: rgb(127 149 175) !important;
+  background: #f2f9ff;
+  padding: 18px;
+}
+
+.sidebar {
+  width: 300px !important;
+  background: #f2f9ff;
+  height: 100vh;
+}
+
+.search-form {
+  width: 100%;
+  position: relative;
+}
+
+.search-form input {
+  border: none;
+  width: 100% !important;
+  padding: 18px 50px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.seat-cap {
+  text-align: left !important;
+}
+
+.search-fa-icon {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 18px;
+  color: #6c779a;
+}
+
+.sidemenu-list {
+  padding: 20px 10px;
+  list-style-type: none;
+}
+
+.sidemenu i {
+  color: rgb(120 145 161);
+}
+
+.sidemenu {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.sidemenu:hover {
+  background: #eee;
+}
+
+.sidemenu.active {
+  background: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.active a {
+  color: #351c1c !important;
+}
+
+.sidemenu a {
+  color: rgb(120 145 161);
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.nav-profile-card {
+  display: flex;
+}
+
+.nav-profile-card img {
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 50px;
+}
+
+.user-info span {
+  display: block;
+}
+
+.user-info small {
+  display: block;
+  color: #bc8585;
+}
+
+i.fa-solid.fa-angle-down {
+  font-size: 18px;
+  padding: 12px;
+  margin: 0 10px;
+}
+
+.navigation-body {
+  top: 70px !important;
+  left: 300px !important;
+  position: absolute;
+  width: calc(100% - 300px);
+  height: 100%;
+}
+
+.create-slot-header {
+  padding: 28px 10px;
+  border-bottom: 1px solid #eee;
+  color: #6c7796;
+}
+
+.create-slot-header i {
+  font-size: 25px;
+  margin: 6px 20px;
+}
+
+.create-slot-header .heading {
+  display: flex;
+}
+
+.create-slot-body {
+  padding: 30px 30px;
+  width: 100% !important;
+}
+
+.first-step label,
+.second-step label,
+.third-step label {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.first-step p,
+.second-step p,
+.third-step p {
+  font-size: 16px;
+  color: #4c5263;
+}
+
+.first-step .calendar-div {
+  margin: 30px auto;
+}
+
+.second-step .timepicker-div {
+  display: flex;
+}
+
+.timepicker-div label {
+  font-size: 14px;
+}
+
+strong.colon {
+  padding: 35px 0;
+  margin: 0 20px;
+  font-size: 25px;
+}
+
+.form-control {
+  width: 85px !important;
+  margin-right: 10px;
+  height: 50px;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  font-size: 20px;
+}
+
+.start-time-div,
+.end-time-div {
+  display: flex;
+  position: relative;
+}
+
+.second-step .timepicker-div .form-group {
+  display: flex;
+  padding: 0 10px;
+}
+
+.second-step .timepicker-div .form-group .form-control {
+  margin: 0 10px;
+}
+
+.third-step .capacity-div {
+}
+
+.create-slot-footer {
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.bottom-label {
+  position: absolute;
+  top: 100px;
+}
+
+.btn {
+  width: 150px;
+  height: 60px;
+  margin: 0 10px;
+}
+
+.cancel-button {
+  border: 1px solid #c7bcbc;
+}
+
+.create-slot-header .heading h3 {
+  text-transform: uppercase;
+}
+
+.cancel-button:hover,
+.cancel-button:active,
+.cancel-button:visited {
+  border: 1px solid #c7bcbc;
+}
+
+.submit-button {
+}
+
+.third-step .capacity-div input {
+  width: 50% !important;
+}
+
+.slots-table {
+  padding: 20px;
+}
+
+tr {
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.delete-slot {
+  background: transparent;
+  color: red;
+  border: none;
+  width: 30px;
+  height: auto;
+  margin: 0;
+  font-size: inherit;
+}
+
+.table > thead {
+  vertical-align: middle;
+  border: 2px solid #ccc;
+}
+
+.table thead > tr > th {
+  vertical-align: middle;
+  border-bottom: 2px solid #ccc;
+}
+
+.search-slots {
+  position: relative;
+}
+
+i.search-slots-icon {
+  position: absolute;
+  right: 30px;
+  top: 17px;
+  color: #c7acac;
+}
+
+.search-slots input {
+  width: 100% !important;
+  text-align: left !important;
+  padding-left: 20px;
+}
+
+.slots-filter {
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-right: 0px;
+}
+
+.search-button-slots {
+  width: 100% !important;
+  height: 50px !important;
+}
+
+.search-slot-date {
+  width: 100% !important;
+  color: #7f7785;
+  text-align: left;
+}
+
+input,
+input:active,
+input:hover,
+input:focus,
+input:visited {
+  outline: none !important;
+  box-shadow: none !important;
+}
